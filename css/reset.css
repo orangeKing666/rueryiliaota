@@ -1,0 +1,160 @@
+/* ==========================
+   基础样式重置
+   ========================== */
+/* 1. 重置所有元素的默认内外边距，统一盒模型 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /* 盒模型：宽度/高度包含边框和内边距，布局更易计算 */
+  box-sizing: border-box;
+}
+
+/* 2. 重置body的基础样式，统一字体和行高 */
+body {
+  /* 继承系统字体，提升跨平台兼容性 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px; /* 基础字体大小 */
+  line-height: 1.5; /* 舒适的行高，提升可读性 */
+  color: #333; /* 基础文字颜色 */
+  background-color: #fff; /* 基础背景色 */
+  -webkit-font-smoothing: antialiased; /* 抗锯齿，提升字体渲染效果 */
+}
+
+/* 3. 重置列表样式（无序列表/有序列表） */
+ul,
+ol {
+  list-style: none; /* 清除默认列表符号 */
+}
+
+/* 4. 重置链接样式 */
+a {
+  text-decoration: none; /* 清除默认下划线 */
+  color: inherit; /* 继承父元素颜色 */
+  cursor: pointer; /* 鼠标悬浮为手型 */
+}
+
+/* 5. 重置标题样式（h1-h6） */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; /* 继承父元素字体大小 */
+  font-weight: inherit; /* 继承父元素字体粗细 */
+}
+
+/* 6. 重置图片/视频/iframe等媒体元素 */
+img,
+video,
+iframe {
+  display: block; /* 转为块级元素，消除底部默认间隙 */
+  max-width: 100%; /* 自适应容器宽度，防止溢出 */
+  height: auto; /* 高度自动，保持宽高比 */
+  border: none; /* 清除默认边框 */
+}
+
+/* 7. 重置表格样式 */
+table {
+  border-collapse: collapse; /* 合并单元格边框 */
+  border-spacing: 0; /* 清除单元格间距 */
+}
+
+/* 8. 重置表单元素 */
+button,
+input,
+textarea,
+select {
+  font-family: inherit; /* 继承字体 */
+  font-size: inherit; /* 继承字体大小 */
+  color: inherit; /* 继承颜色 */
+  background: transparent; /* 透明背景 */
+  border: none; /* 清除默认边框 */
+  outline: none; /* 清除聚焦时的默认外边框 */
+  cursor: pointer; /* 鼠标悬浮为手型（按钮/选择框） */
+}
+
+/* 9. 清除textarea默认的可拖拽调整大小 */
+textarea {
+  resize: none;
+}
+
+/* 10. 重置blockquote/fieldset等元素 */
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* 11. 通用清除浮动类（实用工具类） */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 12. 重置:focus状态（可选，提升可访问性） */
+:focus-visible {
+  outline: 2px solid #0066cc; /* 聚焦时的可见边框，适配键盘导航 */
+  outline-offset: 2px;
+}
+
+/* 字体 */
+* {
+  font-family: 'HONOR Sans CN', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+@font-face {
+  font-family: 'HONOR Sans CN';
+  src: url('./font/HONORSansCN-Regular.woff2') format('woff2'),
+    url('./font/HONORSansCN-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HONOR Sans CN';
+  src: url('./font/HONORSansCN-Bold.woff2') format('woff2'),
+    url('./font/HONORSansCN-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/* 字体 */
+
+/* 响应式开发设置 */
+@media (max-width: 1920px) or (min-width: 1921px) {
+    html { font-size: calc(10000vw / 1920) !important; width: 100%; }
+    .container { width: clamp(62.5%, 67.709%, 83.334%) !important; margin: 0 auto; box-sizing: border-box; transition: all .3s; }
+}
+@media (max-width: 1367px) {
+    html { font-size: calc(10000vw / 1366) !important; }
+    .container { width: 83.334% !important; }
+}
+@media (max-width: 1100px) {
+    html { font-size: calc(10000vw / 1100) !important; }
+    .container { width: 100% !important; padding: 0 0.3rem; }
+}
+@media (max-width: 760px) {
+    html { font-size: calc(10000vw / 760) !important; }
+    .container { width: 100% !important; padding: 0 0.2rem; }
+}
+@media (max-width: 670px) {
+    html { font-size: calc(10000vw / 670) !important; }
+}
+@media (max-width: 600px) {
+    html { font-size: calc(10000vw / 600) !important; }
+}
+@media (max-width: 520px) {
+    html { font-size: calc(10000vw / 520) !important; }
+}
+@media (max-width: 414px) {
+    html { font-size: calc(10000vw / 414) !important; }
+}
+@media (max-width: 375px) {
+    html { font-size: calc(10000vw / 375) !important; }
+}
+/* 响应式开发设置 */
