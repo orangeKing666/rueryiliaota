@@ -108,8 +108,8 @@ fieldset {
 }
 @font-face {
   font-family: 'HONOR Sans CN';
-  src: url('./font/HONORSansCN-Regular.woff2') format('woff2'),
-    url('./font/HONORSansCN-Regular.woff') format('woff');
+  src: url('../font/HONORSansCN-Regular.woff2') format('woff2'),
+    url('../font/HONORSansCN-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -117,8 +117,8 @@ fieldset {
 
 @font-face {
   font-family: 'HONOR Sans CN';
-  src: url('./font/HONORSansCN-Bold.woff2') format('woff2'),
-    url('./font/HONORSansCN-Bold.woff') format('woff');
+  src: url('../font/HONORSansCN-Bold.woff2') format('woff2'),
+    url('../font/HONORSansCN-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;

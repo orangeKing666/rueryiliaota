@@ -158,7 +158,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    font-weight: 600;
+    font-size: 0.2rem;
 }
 .time { color: var(--color7e6); }
 
